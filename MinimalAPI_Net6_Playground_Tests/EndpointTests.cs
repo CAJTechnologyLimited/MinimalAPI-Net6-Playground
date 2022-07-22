@@ -1,6 +1,5 @@
 using System.Net;
 using System.Net.Http.Json;
-using MinimalAPI_Net6_Playground.Data.Models;
 
 namespace MinimalAPI_Net6_Playground_Tests;
 
