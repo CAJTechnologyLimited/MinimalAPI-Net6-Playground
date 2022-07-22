@@ -1,9 +1,13 @@
+using MinimalAPI_Net6_Playground.Data.Models;
+using MinimalAPI_Net6_Playground.Data.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
@@ -16,28 +20,17 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.MapGet("/products/{id}", (Guid id, IProductRepository productRepository) => { return productRepository.Get(id); });
 
-app.MapGet("/weatherforecast", () =>
+app.MapPost("/products",
+    (Product product, IProductRepository productRepository) => { productRepository.Add(product); });
+
+app.MapPut("/items", (Product product, IProductRepository productRepository) => { productRepository.Update(product); });
+
+app.MapDelete("/items/{id}", (Guid id, IProductRepository productRepository) =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateTime.Now.AddDays(index),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    var product = productRepository.Get(id);
+    productRepository.Delete(product);
+});
 
 app.Run();
-
-internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

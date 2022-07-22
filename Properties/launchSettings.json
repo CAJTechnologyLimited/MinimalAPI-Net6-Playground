@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "TodoApi": {
+    "MinimalAPI_Net6_Playground": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

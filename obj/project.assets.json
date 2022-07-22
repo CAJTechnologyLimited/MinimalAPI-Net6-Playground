@@ -214,11 +214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\craig\\source\\CAJ Technology\\Repos\\TodoApi\\TodoApi.csproj",
-      "projectName": "TodoApi",
-      "projectPath": "C:\\Users\\craig\\source\\CAJ Technology\\Repos\\TodoApi\\TodoApi.csproj",
+      "projectUniqueName": "C:\\Users\\craig\\source\\CAJ Technology\\Repos\\MinimalAPI_Net6_Playground\\MinimalAPI_Net6_Playground.csproj",
+      "projectName": "MinimalAPI_Net6_Playground",
+      "projectPath": "C:\\Users\\craig\\source\\CAJ Technology\\Repos\\MinimalAPI_Net6_Playground\\MinimalAPI_Net6_Playground.csproj",
       "packagesPath": "C:\\Users\\craig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\craig\\source\\CAJ Technology\\Repos\\TodoApi\\obj\\",
+      "outputPath": "C:\\Users\\craig\\source\\CAJ Technology\\Repos\\MinimalAPI_Net6_Playground\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

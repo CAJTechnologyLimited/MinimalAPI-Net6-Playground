@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PXHG8ebI08jzhrbH7c/GjAnWs00OBEJzABgzNVhjZH5P1lpi2tbjPPqWGs9/YXtQ4gFdQtVCb0D9BeVCk4Fc+w==",
+  "dgSpecHash": "RPwJ9xw813OGj6Sc727jjeqWTPuOg6mfgbHGy1SVqCty1Vz/xT3BaPJ0iDmoDAR+h4nMpnRCFsJOfeYv0TpUZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\craig\\source\\CAJ Technology\\Repos\\TodoApi\\TodoApi.csproj",
+  "projectFilePath": "C:\\Users\\craig\\source\\CAJ Technology\\Repos\\MinimalAPI_Net6_Playground\\MinimalAPI_Net6_Playground.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\craig\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\craig\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
