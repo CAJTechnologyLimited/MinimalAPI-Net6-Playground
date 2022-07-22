@@ -3,7 +3,7 @@ using System.Net.Http.Json;
 
 namespace MinimalAPI_Net6_Playground_Tests;
 
-public class EndpointTests
+public class IntegrationTests
 {
     [Fact]
     public async void Verify_Post_ReturnsSuccess()
